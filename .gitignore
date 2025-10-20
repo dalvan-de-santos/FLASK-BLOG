@@ -1,0 +1,34 @@
+# Ambientes virtuais
+venv/
+.venv/
+
+# Arquivos compilados do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# Banco de dados SQLite (se usado apenas para dev)
+instance/
+*.sqlite3
+
+# Configurações locais
+.env
+*.env
+.env.*
+
+# VS Code
+.vscode/
+
+# Distribuição / build
+build/
+dist/
+*.egg-info/
+
+# Arquivos temporários
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
