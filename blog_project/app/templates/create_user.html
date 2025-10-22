@@ -1,0 +1,28 @@
+{% extends 'homepage.html' %}
+
+{% block content %}
+    <div class="form-container">
+        <h1>Create User</h1>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+
+            <label for="username">{{ form.username.label }}</label>
+            {{ form.username(id="username") }}
+
+            <label for="email">{{ form.email.label }}</label>
+            {{ form.email(id="email") }}
+
+            <label for="password">{{ form.password.label }}</label>
+            {{ form.password(id="password") }}
+
+            <label for="confirm_password">{{ form.confirm_password.label }}</label>
+            {{ form.confirm_password(id="confirm_password") }}
+
+            {{ form.submit() }}
+        </form>
+    </div>
+
+
+
+
+{% endblock %}
